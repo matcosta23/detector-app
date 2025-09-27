@@ -1,0 +1,11 @@
+__pycache__/
+.pytest_cache/
+.venv/
+.env
+outputs/
+*.engine
+*.onnx
+weights/
+data/
+dist/
+build/

@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "CLI • detect (bus.jpg demo)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "app.cli",                       // runs `python -m app.cli ...`
+            "args": ["detect", "-s", "https://ultralytics.com/images/bus.jpg", "--save-vis"],
+            "cwd": "${workspaceFolder}",               // ensure we’re in the scaffold root
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "env": { "CUDA_VISIBLE_DEVICES": "0" },
+            "justMyCode": false
+        }
+    ]
+}

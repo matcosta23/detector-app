@@ -1,0 +1,12 @@
+# Detector configuration
+model_path: "weights/yolov8n.pt"  # can be .pt, .onnx, or .engine
+imgsz: 640
+conf: 0.25
+iou: 0.45
+device: "cuda:0"         # "cpu", "cuda:0", or "auto"
+max_det: 300
+save_txt: false
+save_json: true
+save_vis: true
+classes_map:           # optional remapping or labeling for downstream VLM
+  # 0: "product"
