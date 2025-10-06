@@ -1,5 +1,5 @@
-from pydantic import BaseModel
 from __future__ import annotations
+from pydantic import BaseModel
 import io, os
 from fastapi import FastAPI, UploadFile, File, Query
 from fastapi.responses import JSONResponse

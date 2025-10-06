@@ -9,11 +9,19 @@
             "type": "debugpy",
             "request": "launch",
             "module": "app.cli",                       // runs `python -m app.cli ...`
-            "args": ["detect", "-s", "https://ultralytics.com/images/bus.jpg", "--save-vis"],
+            "args": ["detect", "-s", "https://ultralytics.com/images/zidane.jpg", "--save-vis"],
             "cwd": "${workspaceFolder}",               // ensure we’re in the scaffold root
             "console": "integratedTerminal",
             "envFile": "${workspaceFolder}/.env",
             "env": { "CUDA_VISIBLE_DEVICES": "0" },
+            "justMyCode": false
+        },
+        {
+            "name": "Simple Validation",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "tests/basic_yolo.py",
+            "console": "integratedTerminal",
             "justMyCode": false
         }
     ]

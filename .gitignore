@@ -7,5 +7,6 @@ outputs/
 *.onnx
 weights/
 data/
+datasets/
 dist/
 build/
