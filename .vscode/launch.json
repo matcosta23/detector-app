@@ -20,9 +20,21 @@
             "name": "Simple Validation",
             "type": "debugpy",
             "request": "launch",
-            "program": "tests/basic_yolo.py",
+            "program": "scripts/basic_yolo.py",
             "console": "integratedTerminal",
             "justMyCode": false
+        },
+        {
+            "name": "Train YOLO on SKU",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/scripts/train_yolo_sku.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                "--epochs", "100", "--imgsz", "1024", "--batch", "8",
+                "--coslr", "--close-mosaic", "10", "--device", "0"
+            ]
         }
     ]
 }
